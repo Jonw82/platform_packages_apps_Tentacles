@@ -14,6 +14,7 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lineage="http://schemas.android.com/apk/res/cyanogenmod.platform"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/quicksettings_category" >
 
@@ -22,18 +23,36 @@
             android:title="@string/lockscreen_qs_disabled_title"
             android:summary="@string/lockscreen_qs_disabled_summary"/>
 
-    <com.teamoctos.tentacles.preference.SecureSettingSwitchPreference
-        android:key="qs_show_brightness"
-        android:title="@string/qs_brightness_slider_title"
-        android:summary="@string/qs_brightness_slider_summary"
-        android:defaultValue="true"/>
-
     <cyanogenmod.preference.CMSystemSettingListPreference
         android:key="qs_quick_pulldown"
         android:title="@string/status_bar_quick_qs_pulldown_title"
         android:entries="@array/status_bar_quick_qs_pulldown_entries"
         android:entryValues="@array/status_bar_quick_qs_pulldown_values"
         android:defaultValue="0" />
+
+        <PreferenceCategory
+            android:title="@string/status_bar_brightness_category">
+
+            <cyanogenmod.preference.CMSecureSettingSwitchPreference
+                android:key="qs_show_brightness_slider"
+                android:title="@string/status_bar_brightness_slider_title"
+                android:summary="@string/status_bar_brightness_slider_summary"
+                android:defaultValue="true" />
+
+            <cyanogenmod.preference.CMSecureSettingSwitchPreference
+                android:key="qs_show_auto_brightness"
+                android:title="@string/status_bar_brightness_slider_auto_title"
+                android:summary="@string/status_bar_brightness_slider_auto_summary"
+                android:dependency="qs_show_brightness_slider"
+                lineage:requiresConfig="@*android:bool/config_automatic_brightness_available"
+                android:defaultValue="true" />
+
+            <cyanogenmod.preference.CMSystemSettingSwitchPreference
+                android:key="status_bar_brightness_control"
+                android:title="@string/status_bar_toggle_brightness"
+                android:summary="@string/status_bar_toggle_brightness_summary"
+                android:defaultValue="false" />
+        </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/qs_omnijaws_category">

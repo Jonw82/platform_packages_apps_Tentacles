@@ -16,7 +16,7 @@
 
     <!-- General strings -->
     <string name="tentacles_summary_title">Personalizza OctOS</string>
-  
+
     <!-- Tabs -->
     <string name="system_category">Sistema</string>
     <string name="lockscreen_category">Schermata di blocco</string>
@@ -38,14 +38,6 @@
     <string name="traffic_category">Indicatori di traffico</string>
     <string name="omniswitch_category">OmniSwitch</string>
     <string name="breathing_notifications_category">Notifiche lampeggianti</string>
-
-    <!-- Quick Settings brightness slider -->
-    <string name="qs_brightness_slider_title">Cursore luminosità</string>
-    <string name="qs_brightness_slider_summary">Mostra un cursore di luminosità nel pannello delle impostazioni rapide</string>
-
-    <!-- Status bar -->
-    <string name="status_bar_toggle_brightness">Controllo della luminosità</string>
-    <string name="status_bar_toggle_brightness_summary">Regola la luminosità facendo scorrere il dito sulla barra di stato</string>
 
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">Recenti immersivi</string>
@@ -320,7 +312,7 @@
     <!-- Navbar dynamic color -->
     <string name="nav_bar_dynamic_title">Colore barra di navigazione dinamico</string>
     <string name="nav_bar_dynamic_summary">Attiva la barra di navigazione per adattare il colore scuro primario delle applicazioni. Riavvia l\'applicazione desiderata per vedere l\'effetto.</string>
-  
+
     <!-- Lockscreen Shortcuts -->
     <string name="lockscreen_targets_title">Scorciatoie angoli inferiori</string>
 
@@ -436,7 +428,7 @@
     <string name="qs_tile_animation_duration_fast">Veloce</string>
     <string name="qs_set_animation_style">Animazione impostata su %1$s</string>
     <string name="qs_set_animation_duration">Durata animazione impostata su %1$s</string>
-  
+
     <!-- QS headers -->
     <string name="qs_header_category">Opzioni intestazione impostazioni rapide</string>
     <string name="status_bar_custom_header_title">Immagine intestazione personalizzata</string>
